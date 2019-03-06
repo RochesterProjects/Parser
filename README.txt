@@ -14,7 +14,7 @@ gcc -Wall -Werror -o run expr.c
 
 How to run project: 
 Type in expression. No spaces needed between operators and operands.
-
+All parsing and calculating done at once. 
 Sources used:
 
 For stack implementaton: geeksforgeeks.org/stack-data-structure-introduction-program/
