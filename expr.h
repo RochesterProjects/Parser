@@ -5,34 +5,41 @@ typedef struct NODE *TREE;
 
 
 
-extern TREE makeNode0(char x);
+extern TREE makeNode0(char* x);
 
-extern TREE makeNode1(char x, TREE t);
+extern TREE makeNode1(char* x, TREE t);
 
-extern TREE makeNode4(char x, TREE t1, TREE t2, TREE t3, TREE t4);
+extern TREE makeNode4(char* x, TREE t1, TREE t2, TREE t3, TREE t4);
 
 extern int matchTerminal(char c);
 
 extern int lookahead(char c);
 
-extern int D();
+extern TREE D();
 
-extern int N();
+extern TREE N();
 
-extern int NT();
+extern TREE NT();
 
-extern int T();
+extern TREE T();
 
-extern int FT();
+extern TREE FT();
 
-extern int TT();
+extern TREE TT();
 
-extern int E();
+extern TREE E();
 
-extern int F();
+extern TREE F();
 
+extern int isTerminal(char* x);
 
-extern int parseE();
+extern TREE parseE();
+
+extern void stackPusher(int i);
+
+extern void productionDecider(char* nextCat);
+
+extern TREE tableParse();
 
 extern void test();
 
